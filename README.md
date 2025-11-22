@@ -76,11 +76,19 @@ On this synthetic series:
 - Prophet gives similar accuracy and adds clear separation of trend and seasonality, which is useful for explanation.
 - Chronos-2 is designed for more complex, multi-series problems; on this simple single series it does not have a big advantage.
 
+## Opening the notebook
+
+If your environment has trouble rendering the `.ipynb` file directly (e.g., GitHub viewer errors or missing Jupyter extensions),
+you can either:
+
+- Use [nbviewer](https://nbviewer.org/) with the raw notebook URL to view it in the browser.
+- Run `jupyter notebook` or `jupyter lab` locally and open `Chronos_vs_Prophet_vs_Statsmodels_on_Supply_Chain_Demand.ipynb`.
+- Read the auto-generated Python script version `Chronos_vs_Prophet_vs_Statsmodels_on_Supply_Chain_Demand.py`, which mirrors each
+  notebook cell with `# %%` markers and trimmed outputs so it can be inspected as plain code.
+
 ## Files
 
-- notebooks/supply_chain_demand_chronos_prophet_sarimax.ipynb  
-  Colab notebook with:
-  - data generation
-  - train–test split
-  - SARIMAX, Prophet, Chronos-2 models
-  - metrics and plots
+- `Chronos_vs_Prophet_vs_Statsmodels_on_Supply_Chain_Demand.ipynb`: Colab notebook with data generation, train–test split, model
+  training (SARIMAX, Prophet, Chronos-2), metrics, and plots.
+- `Chronos_vs_Prophet_vs_Statsmodels_on_Supply_Chain_Demand.py`: Script export of the notebook so the content is readable without
+  a notebook viewer.
